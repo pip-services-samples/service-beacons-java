@@ -1,6 +1,6 @@
 package org.pipservices3.beacons.service.persistence;
 
-import org.pipservices3.beacons.service.data.version1.BeaconV1;
+import org.pipservices3.beacons.data.version1.BeaconV1;
 import org.pipservices3.commons.config.ConfigParams;
 import org.pipservices3.commons.errors.ConfigException;
 import org.pipservices3.data.persistence.JsonFilePersister;

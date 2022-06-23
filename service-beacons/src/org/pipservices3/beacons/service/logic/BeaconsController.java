@@ -1,7 +1,7 @@
 package org.pipservices3.beacons.service.logic;
 
-import org.pipservices3.beacons.service.data.version1.BeaconTypeV1;
-import org.pipservices3.beacons.service.data.version1.BeaconV1;
+import org.pipservices3.beacons.data.version1.BeaconTypeV1;
+import org.pipservices3.beacons.data.version1.BeaconV1;
 import org.pipservices3.beacons.service.persistence.IBeaconsPersistence;
 import org.pipservices3.commons.commands.CommandSet;
 import org.pipservices3.commons.commands.ICommandable;
@@ -9,10 +9,8 @@ import org.pipservices3.commons.config.ConfigParams;
 import org.pipservices3.commons.config.IConfigurable;
 import org.pipservices3.commons.data.DataPage;
 import org.pipservices3.commons.data.FilterParams;
-import org.pipservices3.commons.data.IdGenerator;
 import org.pipservices3.commons.data.PagingParams;
 import org.pipservices3.commons.errors.ApplicationException;
-import org.pipservices3.commons.errors.ConfigException;
 import org.pipservices3.commons.refer.Descriptor;
 import org.pipservices3.commons.refer.IReferenceable;
 import org.pipservices3.commons.refer.IReferences;

@@ -3,7 +3,7 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>service-beacons</artifactId>
+        <artifactId>beacons</artifactId>
         <groupId>org.pipservices</groupId>
         <version>1.0.0</version>
     </parent>
@@ -11,9 +11,35 @@
 
     <artifactId>data-beacons</artifactId>
 
+    <build>
+        <sourceDirectory>${basedir}/src</sourceDirectory>
+        <!--        <testSourceDirectory>${basedir}/test</testSourceDirectory>-->
+        <outputDirectory>${basedir}/obj/src</outputDirectory>
+        <testOutputDirectory>${basedir}/obj/test</testOutputDirectory>
+        <resources>
+            <resource>
+                <directory>${basedir}/src/resources</directory>
+            </resource>
+        </resources>
+        <testResources>
+            <testResource>
+                <directory>${basedir}/test/resources</directory>
+            </testResource>
+        </testResources>
+        <directory>${basedir}/lib</directory>
+        <finalName>${project.artifactId}-${project.version}</finalName>
+    </build>
+
     <properties>
         <maven.compiler.source>18</maven.compiler.source>
         <maven.compiler.target>18</maven.compiler.target>
     </properties>
 
+    <dependencies>
+        <dependency>
+            <groupId>org.pipservices</groupId>
+            <artifactId>pip-services3-commons</artifactId>
+            <version>[${minimal.pipversion},4.0.0-!)</version>
+        </dependency>
+    </dependencies>
 </project>

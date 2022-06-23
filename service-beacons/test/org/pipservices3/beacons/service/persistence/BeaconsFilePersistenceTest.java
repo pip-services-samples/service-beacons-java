@@ -15,7 +15,7 @@ public class BeaconsFilePersistenceTest {
     public void setup() throws ApplicationException {
         persistence = new BeaconsFilePersistence();
         persistence.configure(ConfigParams.fromTuples(
-                "path", "data/beacons.test.json"
+                "path", "../data/beacons.test.json"
         ));
 
         fixture = new BeaconsPersistenceFixture(persistence);

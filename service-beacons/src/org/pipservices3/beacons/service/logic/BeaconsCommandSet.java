@@ -1,8 +1,8 @@
 package org.pipservices3.beacons.service.logic;
 
 import com.fasterxml.jackson.core.type.TypeReference;
-import org.pipservices3.beacons.service.data.version1.BeaconV1;
-import org.pipservices3.beacons.service.data.version1.BeaconV1Schema;
+import org.pipservices3.beacons.data.version1.BeaconV1;
+import org.pipservices3.beacons.data.version1.BeaconV1Schema;
 import org.pipservices3.commons.commands.Command;
 import org.pipservices3.commons.commands.CommandSet;
 import org.pipservices3.commons.commands.ICommand;

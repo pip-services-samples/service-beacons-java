@@ -3,7 +3,7 @@ package org.pipservices3.beacons.service.persistence;
 import com.mongodb.client.model.Filters;
 import org.bson.Document;
 import org.bson.conversions.Bson;
-import org.pipservices3.beacons.service.data.version1.BeaconV1;
+import org.pipservices3.beacons.data.version1.BeaconV1;
 import org.pipservices3.commons.data.DataPage;
 import org.pipservices3.commons.data.FilterParams;
 import org.pipservices3.commons.data.PagingParams;
