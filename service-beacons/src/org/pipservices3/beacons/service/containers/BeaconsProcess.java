@@ -9,7 +9,7 @@ public class BeaconsProcess extends ProcessContainer {
     public BeaconsProcess() {
         super("beacons", "Beacons microservice");
 
-        _configPath = "./config/config.yml";
+        _configPath = "../config/config.yml";
 
         this.addFactory(new BeaconsServiceFactory());
         this.addFactory(new DefaultRpcFactory());

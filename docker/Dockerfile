@@ -13,4 +13,4 @@ RUN mvn dependency:go-offline
 COPY . .
 
 # compile source code
-CMD mvn compile exec:java
+CMD cd service-beacons && mvn compile exec:java
