@@ -5,7 +5,10 @@
     <groupId>org.pipservices</groupId>
     <artifactId>service-beacons</artifactId>
     <version>1.0.0</version>
-    <packaging>jar</packaging>
+    <modules>
+        <module>data-beacons</module>
+    </modules>
+    <packaging>pom</packaging>
 
     <name>Beacons service</name>
     <description>Sample Data Microservice in Java</description>
