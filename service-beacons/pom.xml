@@ -10,6 +10,9 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>service-beacons</artifactId>
+    <name>service-beacons</name>
+    <description>Service Data Microservice in Java</description>
+
     <dependencies>
         <dependency>
             <groupId>org.pipservices</groupId>
