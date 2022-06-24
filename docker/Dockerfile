@@ -7,7 +7,7 @@ WORKDIR /app
 COPY pom.xml ./
 
 # install dependencies
-RUN mvn dependency:go-offline
+# RUN mvn dependency:go-offline
 
 # copy all project
 COPY . .
